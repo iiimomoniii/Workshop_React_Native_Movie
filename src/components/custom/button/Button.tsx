@@ -52,6 +52,27 @@ const styles: {[key:string]:any} = StyleSheet.create({
         alignItems:'center',
         borderRadius:5
     },
+    Container_ConfirmPage_confirm: {
+        width: '50%',
+        padding:15,
+        marginVertical:5,
+        alignItems:'center',
+        borderRadius:5
+    },
+    Container_ConfirmPage_resend: {
+        width: '50%',
+        padding:15,
+        marginVertical:5,
+        alignItems:'center',
+        borderRadius:5
+    },
+    Container_ConfirmPage_back: {
+        width: '50%',
+        padding:15,
+        marginVertical:5,
+        alignItems:'center',
+        borderRadius:5
+    },
     Button_SignInPage_signIn : {
         backgroundColor: '#f44336',
     },
@@ -63,6 +84,18 @@ const styles: {[key:string]:any} = StyleSheet.create({
     },
     Button_RegisterPage_register : {
         backgroundColor: '#f44336',
+    },
+    Button_RegisterPage_confirm : {
+        backgroundColor: '#f44336'
+    },
+    Button_ConfirmPage_confirm : {
+        backgroundColor: '#f44336'
+    },
+    Button_ConfirmPage_back : {
+        backgroundColor: '#000000',
+    },
+    Button_ConfirmPage_resend : {
+        backgroundColor: '#f1c232',
     },
     text: {
         fontWeight:'bold',
@@ -85,6 +118,15 @@ const styles: {[key:string]:any} = StyleSheet.create({
     Text_RegisterPage_register : {
         color: '#ffffff',
         fontWeight: 'bold',
+    },
+    Text_ConfirmPage_confirm : {
+        color: '#ffffff',
+        fontWeight: 'bold'
+    },
+    Text_ConfirmPage_back : {
+        color: '#ffffff',
+        fontWeight: 'bold',
+        textDecorationLine: 'underline',
     }
 })
 

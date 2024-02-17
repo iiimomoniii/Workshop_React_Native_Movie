@@ -36,7 +36,6 @@ const register = () => {
                 <Text style={styles.policyLink} onPress={onTermOfUsePressed} >Terms of Use</Text> and {' '}
                 <Text style={styles.policyLink} onPress={onPrivacyPressed} >Privacy Policy</Text>
             </Text>
-
         </View>
     )
 }
@@ -45,7 +44,7 @@ const styles = StyleSheet.create({
     root: {
         flex:1,
         alignItems: 'center',
-        marginTop: 150
+        marginTop: 20
     },
     title: {
         fontSize: 24,
@@ -56,7 +55,7 @@ const styles = StyleSheet.create({
     policy: {
         fontSize: 15,
         color: '#ffffff',
-        marginTop: 100
+        marginTop: 250
     },
     policyLink: {
         fontSize: 15,

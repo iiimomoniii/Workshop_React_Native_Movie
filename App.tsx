@@ -3,14 +3,15 @@ import { View, Text, SafeAreaView, StyleSheet, Image ,useWindowDimensions} from 
 
 import SignIn from './src/screens/signin/SignIn' 
 import Register from './src/screens/register'
-
+import Confirm from './src/screens/confirm/Confirm'
 const App = () => {
 
 
   return (
     <SafeAreaView style={[styles.root]}>
       {/* <SignIn/> */}
-      <Register/>
+      {/* <Register/> */}
+      <Confirm/>
     </SafeAreaView>
   )
 }
