@@ -73,6 +73,34 @@ const styles: {[key:string]:any} = StyleSheet.create({
         alignItems:'center',
         borderRadius:5
     },
+    Container_ResetPage_reset: {
+        width: '50%',
+        padding:15,
+        marginVertical:5,
+        alignItems:'center',
+        borderRadius:5
+    },
+    Container_ResetPage_back: {
+        width: '50%',
+        padding:15,
+        marginVertical:5,
+        alignItems:'center',
+        borderRadius:5
+    },
+    Container_ForgotPage_confirm_email: {
+        width: '50%',
+        padding:15,
+        marginVertical:5,
+        alignItems:'center',
+        borderRadius:5
+    },
+    Container_ForgotPage_back: {
+        width: '50%',
+        padding:15,
+        marginVertical:5,
+        alignItems:'center',
+        borderRadius:5
+    },
     Button_SignInPage_signIn : {
         backgroundColor: '#f44336',
     },
@@ -96,6 +124,18 @@ const styles: {[key:string]:any} = StyleSheet.create({
     },
     Button_ConfirmPage_resend : {
         backgroundColor: '#f1c232',
+    },
+    Button_ResetPage_reset : {
+        backgroundColor: '#ff9a00',
+    },
+    Button_ResetPage_back : {
+        backgroundColor: '#000000',
+    },
+    Button_ForgotPage_confirm_email : {
+        backgroundColor : '#0096FF'
+    }, 
+    Button_ForgotPage_back : {
+        backgroundColor: '#000000',
     },
     text: {
         fontWeight:'bold',
@@ -124,6 +164,20 @@ const styles: {[key:string]:any} = StyleSheet.create({
         fontWeight: 'bold'
     },
     Text_ConfirmPage_back : {
+        color: '#ffffff',
+        fontWeight: 'bold',
+        textDecorationLine: 'underline',
+    },
+    Text_ResetPage_back : {
+        color: '#ffffff',
+        fontWeight: 'bold',
+        textDecorationLine: 'underline',
+    },
+    Text_ForgotPage_confirm_email : {
+        color: '#ffffff',
+        fontWeight: 'bold',
+    },
+    Text_ForgotPage_back : {
         color: '#ffffff',
         fontWeight: 'bold',
         textDecorationLine: 'underline',
