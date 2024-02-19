@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Input from '../../components/custom/input'
 import Button from '../../components/custom/button/Button'
 
-const register = () => {
+const Register = ({ navigation }: {navigation: any}) => {
 
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
@@ -11,7 +11,7 @@ const register = () => {
     const [passwordRepeat, setPasswordRepeat] = useState('');
 
     const onBackPressed = () => {
-        console.warn("back")
+        navigation.navigate('SignIn')
     }
     const onRegisterPressed = () => {
         console.warn("register")
@@ -42,6 +42,7 @@ const register = () => {
 
 const styles = StyleSheet.create({
     root: {
+        backgroundColor: '#000000',
         flex:1,
         alignItems: 'center',
         marginTop: 20
@@ -65,4 +66,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default register
+export default Register

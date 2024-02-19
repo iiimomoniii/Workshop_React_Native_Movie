@@ -159,6 +159,11 @@ const styles: {[key:string]:any} = StyleSheet.create({
         color: '#ffffff',
         fontWeight: 'bold',
     },
+    Text_RegisterPage_back : {
+        color: '#ffffff',
+        fontWeight: 'bold',
+        textDecorationLine: 'underline',
+    },
     Text_ConfirmPage_confirm : {
         color: '#ffffff',
         fontWeight: 'bold'

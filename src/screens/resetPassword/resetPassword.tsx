@@ -2,7 +2,7 @@ import { View, Text, StyleSheet } from 'react-native'
 import React, {useState} from 'react'
 import Input from '../../components/custom/input'
 import Button from '../../components/custom/button/Button'
-const ResetPassword = () => {
+const ResetPassword = ({ navigation }: {navigation: any}) => {
   
   const [password, setPassword] = useState('');
   const [passwordRepeat, setPasswordRepeat] = useState('');
@@ -11,7 +11,7 @@ const ResetPassword = () => {
       console.warn("forgot")
   }
   const onBackPressed = () => {
-      console.warn("back")
+    navigation.navigate('Home');
   }
 
   return (
@@ -20,13 +20,14 @@ const ResetPassword = () => {
           <Input placeholder={"Password"} value={password} setValue={setPassword} secureTextEntry={true} />
             <Input placeholder={"Repeat Password"} value={passwordRepeat} setValue={setPasswordRepeat} secureTextEntry={true} />
           <Button text='Reset Password' onPress={onForgotPressed} page="ResetPage" type="reset" />
-          <Button text='Back To Sign In' onPress={onBackPressed} page="ResetPage" type="back"/>
+          <Button text='Back' onPress={onBackPressed} page="ResetPage" type="back"/>
       </View>
   )
 }
 
 const styles = StyleSheet.create({
   root: {
+      backgroundColor: '#000000',
       flex:1,
       alignItems: 'center',
       marginTop: 20
