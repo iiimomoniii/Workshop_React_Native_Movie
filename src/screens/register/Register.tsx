@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Input from '../../components/custom/input'
 import Button from '../../components/custom/button/Button'
 
-const Register = () => {
+const register = () => {
 
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
@@ -65,4 +65,4 @@ const styles = StyleSheet.create({
     }
 })
 
-export default Register
+export default register

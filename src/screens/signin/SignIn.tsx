@@ -2,25 +2,22 @@ import { View, Text, Image, StyleSheet, useWindowDimensions,  } from 'react-nati
 import React, {useState} from 'react'
 import Input from '../../components/custom/input'
 import Button from '../../components/custom/button/Button'
-import { useNavigation } from '@react-navigation/native';
 const Logo =  require("../../assets/img/major_logo.jpeg")
-// const navigation = useNavigation();
-const navigation = useNavigation();
 
-const Signin = () => {
+const signin = () => {
 
     const {height} = useWindowDimensions();
 
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const onSignInPressed = () => {
-        //navigation.navigate('Home');
+        console.warn("sign in")
     }
     const onForgotPasswordPressed = () => {
-        //navigation.navigate('Home');
+        console.warn("forgot password")
     }
     const onRegisterPressed = () => {
-        //navigation.navigate('Register');
+        console.warn("register")
     }
 
   return (
@@ -39,8 +36,7 @@ const styles = StyleSheet.create({
     root : {
         flex:1,
         alignItems: 'center',
-        marginTop: 20,
-        backgroundColor: '#000000'
+        marginTop: 20
     },
     logo : {
       backgroundColor: '#000000',
@@ -49,4 +45,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default Signin
+export default signin
