@@ -101,6 +101,14 @@ const styles: {[key:string]:any} = StyleSheet.create({
         alignItems:'center',
         borderRadius:5
     },
+    Container_HomePage_detail: {
+        width: '90%',
+        padding:15,
+        marginVertical:5,
+        alignItems:'center',
+        borderRadius:5,
+        margin:20
+    },
     Button_SignInPage_signIn : {
         backgroundColor: '#f44336',
     },
@@ -136,6 +144,9 @@ const styles: {[key:string]:any} = StyleSheet.create({
     }, 
     Button_ForgotPage_back : {
         backgroundColor: '#000000',
+    }, 
+    Button_HomePage_detail : {
+        backgroundColor: '#ffffff',
     },
     text: {
         fontWeight:'bold',
@@ -186,6 +197,10 @@ const styles: {[key:string]:any} = StyleSheet.create({
         color: '#ffffff',
         fontWeight: 'bold',
         textDecorationLine: 'underline',
+    },
+    Text_HomePage_detail : {
+        color: '#000000',
+        fontWeight: 'bold'
     }
 })
 
