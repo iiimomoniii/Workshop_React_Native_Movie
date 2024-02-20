@@ -1,18 +1,25 @@
 import { View, Text, TextInput, StyleSheet, TextInputProps } from 'react-native'
 import React from 'react'
-
+import { useForm, Controller, FieldValues, Control } from 'react-hook-form';
 interface InputProps extends TextInputProps {
-    value: string;
-    setValue: (text: string) => void;
     placeholder: string;
     secureTextEntry?: boolean;
-  }
+    name: string;
+    control: Control<FieldValues, any, FieldValues>;
+    rules: any;
+}
 
-const Input: React.FC<InputProps> = ({ value, setValue, placeholder, secureTextEntry }) => {
+const Input: React.FC<InputProps> = ({ control, name, rules = {}, placeholder, secureTextEntry }) => {
     return (
-        <View style={styles.container}>
-            <TextInput placeholder={placeholder} style={styles.input} value={value} onChangeText={setValue} secureTextEntry={secureTextEntry}></TextInput>
-        </View>
+        <Controller control={control} name={name} rules={rules}
+            render={({ field: { value, onChange, onBlur }, fieldState: { error } }) => (
+                <>
+                    <View style={[styles.container, { borderColor: error ? 'red' : '#e8e8e8' }]}>
+                        <TextInput style={[styles.input]} value={value} onChangeText={onChange} onBlur={onBlur} placeholder={placeholder} secureTextEntry={secureTextEntry} />
+                    </View>
+                    {error && (<Text style={{ color: 'red', alignSelf: 'stretch', marginLeft: 30 }}>{error.message || 'Error'}</Text>)}</>
+            )
+            } />
     )
 }
 
